@@ -1,4 +1,4 @@
-variables
+//variables
 // 
 
 //Object for char properties/values
@@ -10,10 +10,10 @@ function Char(attk, counterAttk, health, charImg){
 }
 
 //Characters
-let obiwan = new Char(6, 15, 120, url);
-let vader = new Char(10, 25, 150, url);
-let luke = new Char(8, 12, 100, url);
-let themperor = new Char(9, 8, 160, url);
+let obiwan = new Char(6, 15, 120, url)
+let vader = new Char(10, 25, 150, url)
+let luke = new Char(8, 12, 100, url)
+let themperor = new Char(9, 8, 160, url)
 
 //Win state is defeating remaining characters
 
@@ -25,12 +25,21 @@ function gameSetup(){
     //Score is 0?
 }
 
+
+function addtoHTML(){
+    //This will add elements to html for other functions 
+}
+
+function remove(){
+    //this will remove elements from the html for other functions
+}
+
 function addImages(){
     //add images to html
 }
 
-function selectChar(){
-
+function selectChars(){
+    
     //player selects a character to fight as and against
     //apply a colored border to indicate selection
     //First selection is PC
@@ -41,16 +50,9 @@ function playerChar(){
     //apply stats and use pcAttackPower
 }
 
-//PC = Player Character
-function pcAttackPower(){
-    //handle attack function for character recursively attack+=
-    
-}
-
 function enemyChar(){
     //apply stats
 }
-
 
 function attack(){
 
@@ -59,8 +61,13 @@ function attack(){
     //counter attack is the health - counterAttk property
 }
 
-function addtoHTML(){
-
+//PC = Player Character
+function pcAttackPower(){
+    //handle attack function for character recursively attack+=
+    
 }
+
+
+
 
 
