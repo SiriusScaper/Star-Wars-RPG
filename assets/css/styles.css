@@ -1,7 +1,28 @@
-body {
-    color: red;
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 100px 1fr);
 }
 
-#luke {
-    background-color: green;
+.characters {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 6fr);
+    grid-column: 3/10;
+    grid-row: 2/3;
+}
+
+.characters img {
+    width: 200px;
+    height: 280px;
+}
+
+.selectable {
+    border: 5px solid grey;
+}
+
+
+
+.selected {
+    border: 5px solid green;
 }
